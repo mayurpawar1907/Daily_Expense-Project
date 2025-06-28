@@ -1,5 +1,5 @@
 [phases.setup]
-nixpkgs = ["nodejs", "openssl", "git"]
+nixpkgs = ["nodejs", "coreutils", "openssl", "bash", "git"]
 
 [phases.install]
 cmds = [
