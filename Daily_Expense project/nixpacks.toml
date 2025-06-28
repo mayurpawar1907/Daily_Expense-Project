@@ -1,0 +1,16 @@
+[phases.setup]
+nixpkgs = ["nodejs", "openssl", "git"]
+
+[phases.install]
+cmds = [
+  "cd Backend && npm install",
+  "cd FrontEnd && npm install"
+]
+
+[phases.build]
+cmds = [
+  "cd FrontEnd && npm run build"
+]
+
+[start]
+cmd = "cd Backend && npm start"
